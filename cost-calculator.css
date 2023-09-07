@@ -1,0 +1,168 @@
+.rs-addon-cost-calculator .cost_calculator .area-ctrol {
+  margin-bottom: 30px;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol:not(.area-calculate) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol:not(.area-calculate) > * {
+  flex-shrink: 0;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol:not(.area-calculate) > * label {
+  flex: 0 0 40%;
+  width: 40%;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol:not(.area-calculate) > *:not(label) {
+  flex: 0 0 60%;
+  width: 60%;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol.area-calculate {
+  margin-bottom: 44px;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol.area-calculate .range-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol.area-calculate .range-inner .range_result {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol.emergency-calculate .emergency-inner {
+  display: flex;
+  align-items: center;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol.emergency-calculate .emergency-inner input {
+  margin-right: 15px;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #071230;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 14px;
+  border-radius: 16px;
+  background: transparent;
+  border: 2px solid rgba(7, 18, 48, 0.05);
+  outline: none;
+  opacity: 1;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=range]:hover {
+  opacity: 1;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #c11f4a;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(228, 0, 59, 0.6);
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=range]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #c11f4a;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(228, 0, 59, 0.6);
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=checkbox] {
+  appearance: none;
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c11f4a;
+  border-radius: 0;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=checkbox]:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1.1em 1.1em #c11f4a;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol input[type=checkbox]:checked::before {
+  transform: scale(0.4);
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol .select-option {
+  position: relative;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol .select-option select {
+  appearance: none;
+  margin: 0;
+  height: 40px;
+  border: 2px solid rgba(7, 18, 48, 0.05);
+  padding: 5px 15px;
+  font-size: 15px;
+  color: #6D6D6D;
+  background: transparent;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol .select-option:after {
+  position: absolute;
+  content: "\ea4d";
+  font-family: remixicon;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  font-size: 25px;
+  pointer-events: none;
+  color: #515261;
+}
+.rs-addon-cost-calculator .cost_calculator .area-ctrol:last-child {
+  margin-bottom: 0;
+}
+.rs-addon-cost-calculator .result-area {
+  margin-top: 25px;
+}
+.rs-addon-cost-calculator .result-area .calculate_list,
+.rs-addon-cost-calculator .result-area .range_result2 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.rs-addon-cost-calculator .result-area .calculate_list span,
+.rs-addon-cost-calculator .result-area .range_result2 span {
+  text-transform: uppercase;
+}
+.rs-addon-cost-calculator .result-area .total {
+  margin-top: 25px;
+  border: 2px solid rgba(7, 18, 48, 0.05);
+  border-radius: 4px;
+  padding: 11px 25px;
+  position: relative;
+}
+.rs-addon-cost-calculator .result-area .total span {
+  color: #071230;
+  font-weight: 500;
+  font-size: 15px;
+}
+.rs-addon-cost-calculator .result-area .total p {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  bottom: -2px;
+  margin: 0;
+  border-radius: inherit;
+  padding: 5px 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  line-height: 32px;
+  background: #c11f4a;
+  color: #ffffff;
+}
